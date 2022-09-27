@@ -49,14 +49,22 @@
     </header>
     <section class="home-hero">
       <div class="hero-imgs">
-        <div class="getting-started-hero">
+        <div
+          class="getting-started-hero"
+          onmouseenter="grow('1');"
+          onmouseout="shrink('1');"
+        >
           <div class="hero-btn-area">
             <a href="pages/getting_started.html" class="btn btn-getting"
               >Getting Started</a
             >
           </div>
         </div>
-        <div class="middle-hero">
+        <div
+          class="middle-hero"
+          onmouseenter="grow('2');"
+          onmouseout="shrink('2');"
+        >
           <div class="reblium-logo-hero">
             <img src="../images/reblogo.png" alt="reblium-logo" />
           </div>
@@ -64,7 +72,11 @@
             <a href="pages/register.html" class="btn btn-getting">Sign In</a>
           </div>
         </div>
-        <div class="partners-hero">
+        <div
+          class="partners-hero"
+          onmouseenter="grow('3');"
+          onmouseout="shrink('3');"
+        >
           <div class="hero-btn-area">
             <a href="pages/partners.html" class="btn btn-getting">Partners</a>
           </div>
@@ -236,5 +248,6 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

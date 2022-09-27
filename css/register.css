@@ -92,6 +92,19 @@ label {
 .hero-imgs {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  transition: all 1s;
+}
+
+.hero-imgs.getting-started-anim {
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.hero-imgs.middle-anim {
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.hero-imgs.partners-anim {
+  grid-template-columns: 1fr 1fr 2fr;
 }
 
 .getting-started-hero {

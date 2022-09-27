@@ -138,24 +138,6 @@ label {
   transform: translate(-50%, -50%);
 }
 
-.btn-transparent {
-  font-size: 2rem;
-  color: white;
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid #ffffff;
-  border-radius: 0px;
-  padding: 2.5rem 5rem;
-}
-
-.btn-transparent:hover {
-  font-size: 2rem;
-  color: white;
-  background: rgba(0, 0, 0, 0.2) !important;
-  border: 1px solid #ffffff !important;
-  border-radius: 0px;
-  padding: 2.5rem 5rem;
-}
-
 /* ABOUT */
 .about-section-main {
   display: grid;
@@ -370,4 +352,286 @@ iframe {
   border: 2px solid #ccc;
   border-radius: 10px;
   padding: none;
+}
+
+/* GETTING STARTED */
+
+.getting-started-section::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 450vh;
+  opacity: 0.15;
+  background-image: url("../images/rebMain.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -1;
+}
+
+.getting-started-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15rem;
+  flex-direction: column;
+}
+
+.getting-started-header h1 {
+  font-size: 5rem;
+  letter-spacing: 0.26em;
+  color: #f2f2f2;
+  font-family: "Rubik", sans-serif;
+}
+
+.getting-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  margin-top: 7.5rem;
+}
+
+.btn-getting {
+  font-size: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid #ffffff;
+  border-radius: 0px;
+  width: 30rem;
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+}
+
+.btn-getting:hover {
+  font-size: 2rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid #ffffff !important;
+  border-radius: 0px;
+}
+
+.getting-started-content {
+  padding: 0 30rem;
+}
+
+.single-getting-block-right-img,
+.single-getting-block-left-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 10rem;
+}
+
+.single-getting-info {
+  margin-top: 3.5rem;
+}
+
+.single-getting-info h3 {
+  font-family: "Rubik", sans-serif;
+  font-size: 2.4rem;
+  color: #f2f2f2;
+  letter-spacing: 0.26em;
+}
+
+.single-getting-info p {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  color: #f2f2f2;
+  margin-top: 3rem;
+}
+
+.try-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem 0rem;
+}
+
+/* PARTNERS */
+
+.partners-section {
+  margin-top: 10rem;
+}
+
+.reblium-logo-partners h1 {
+  font-size: 3rem;
+  letter-spacing: 0.26em;
+  color: #f2f2f2;
+  font-family: "Rubik", sans-serif;
+  margin-top: 0.1rem;
+}
+
+.partner-img img,
+.last-img img {
+  width: 270px;
+  height: 100%;
+}
+
+.partners-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+}
+
+.last-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.reblium-logo-partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.reblium-logo-partners img {
+  width: 204px;
+  height: 25px;
+}
+
+/* PRicinG */
+
+.pricing-section {
+  margin-top: 10rem;
+  position: relative;
+}
+
+.pricing-section::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 275vh;
+  opacity: 0.15;
+  background-image: url("../images/rebMain.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: -1;
+}
+
+.pricing-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-header h1 {
+  font-size: 5rem;
+  letter-spacing: 0.26em;
+  color: #f2f2f2;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+
+.avatars-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  margin-top: 5rem;
+}
+
+.pricing-info h2 {
+  font-size: 3.6rem;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+
+.pricing-info h4 {
+  font-size: 2.4rem;
+  color: white;
+  font-family: "Ruda", sans-serif;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 1rem;
+  margin-top: 7.5rem;
+}
+
+.pricing-tables {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -44rem;
+  margin-top: 2.5rem;
+}
+
+.pricing-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+
+.pricing-table-left h4 {
+  font-size: 1.6rem;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  text-align: right;
+  font-weight: 700;
+  letter-spacing: 1em;
+  margin-right: -1.1rem;
+}
+
+.pricing-table-left ul,
+.standart-part ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.pricing-table-left ul li,
+.standart-part ul li {
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  text-align: right;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+.standart-part ul li {
+  text-align: center;
+}
+
+.pricing-table-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15rem;
+  border: 1px solid white;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 4.3rem;
+  padding-bottom: 2.5rem;
+}
+
+.pricing-table-left {
+  margin-top: 2.5rem;
+}
+
+.pricing-sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7.5rem;
+  margin-right: -3rem;
 }
